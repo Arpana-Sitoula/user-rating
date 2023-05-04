@@ -17,7 +17,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={ <ActiveState nums={nums}/>}/>
-          <Route path='thankyou/' element={<ThankyouState nums={nums} />}/>  
+          <Route path='thankyou/' element={<ThankyouState />}/>  
         </Routes>
       </BrowserRouter>
     </div>

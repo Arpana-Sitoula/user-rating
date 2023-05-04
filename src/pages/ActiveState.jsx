@@ -5,12 +5,15 @@ import Button from '../components/Button'
 import { Link } from "react-router-dom";
 
 const ActiveState = ({nums}) => {
-  const [activeState, setActiveState] = useState(true);
-  const [activeBubble, setActiveBubble] = useState(null);
+  const [activeState, setActiveState] = useState(true); 
+  const [numbers, setNumber] = useState(null);
+
   
-  const handleActiveStatus = () =>{
+  const handleActiveStatus = (event) =>{
+    setNumber(event.target.innerText);
+    // console.log(num);
     setActiveState(false);
-    setActiveBubble(1);
+
   }
   
   return (
@@ -21,7 +24,7 @@ const ActiveState = ({nums}) => {
       <div className='keys'>
         {nums.map(number =>{
           return(
-            <Bubble className={activeBubble===0 ? "bubble active": "bubble"} key={number.id} num={number.val} onClick={handleActiveStatus}/>
+            <Bubble className="bubble" key={number.id} value={number.val} onClick={handleActiveStatus} data={numbers}/>
           )
         })}
       </div>

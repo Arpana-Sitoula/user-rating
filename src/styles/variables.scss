@@ -17,6 +17,7 @@ The designs were created to the following widths:
   --light-grey: hsl(217, 12%, 63%);
   --med-grey: hsl(216, 12%, 54%);
   --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(213, 14%, 12%);
   --deep-dark-blue: hsl(216, 12%, 8%);
   background-color: var(--deep-dark-blue);
 }
@@ -26,12 +27,14 @@ The designs were created to the following widths:
     font-size: 25px;
     font-weight: 700;
     color: var(--white);
+    margin: 35px 0px 5px 0px;
   }
   p {
     font-size: 15px;
     font-weight: 400;
     color: var(--light-grey);
     line-height: 20px;
+    letter-spacing: 0.01rem;
   }
   span{
     font-weight: 400;

@@ -13,7 +13,7 @@ const ActiveState = () => {
   ]
   return (
     <div className='card'>
-      <Star/>
+      <div className='top'><Star/></div>
       <div className='title'>How did we do?</div>
       <p>Please let us know, how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
       <div className='keys'>

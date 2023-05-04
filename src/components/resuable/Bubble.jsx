@@ -2,7 +2,7 @@ import React from 'react'
 
 const Bubble = ({num}) => {
   return (
-    <div className='circle'>
+    <div className='bubble'>
       <span>{num}</span>
     </div>
   )

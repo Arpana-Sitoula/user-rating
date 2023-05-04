@@ -1,2 +1,7 @@
-
+.container{
+    @extend .center_div;
+    width: 375px;
+    height: 375px;
+    background-color: var(--dark-blue);
+}
 

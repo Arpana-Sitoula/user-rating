@@ -1,0 +1,27 @@
+.card{
+    padding: 20px;
+    .circle {
+        @extend .center_div;
+        background-color: var(--white);
+        height: 25px;
+        width: 25px;
+        padding: 10px 10px;
+        border-radius: 100%;
+    }
+    .keys{
+        display: flex;
+    }
+    button{
+        width: 100%;
+        background-color: var(--orange);
+        border:none;
+        cursor: pointer;
+        color: var(--white);
+        padding: 12px 24px;
+        border-radius:20px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+    
+    
+}

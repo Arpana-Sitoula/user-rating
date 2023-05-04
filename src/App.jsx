@@ -1,14 +1,14 @@
-import ActiveState from './components/activeState'
-import ThankyouState from './components/thankyouState'
+import React from 'react'
+import ActiveState from './pages/ActiveState'
+import ThankyouState from './pages/ThankyouState'
 
 function App() {
 
   return (
-    <>
-      <h1>Head</h1>
+    <div className='container'>
       <ActiveState/>
       <ThankyouState/>
-    </>
+    </div>
   )
 }
 

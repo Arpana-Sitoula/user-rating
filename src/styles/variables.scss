@@ -8,17 +8,40 @@ The designs were created to the following widths:
 
 */
 
-//primary color
-$-orange: hsl(25, 97%, 53%);
 
-//neutral colors
-$-white: hsl(0, 0%, 100%);
-$-light-grey: hsl(217, 12%, 63%);
-$-med-grey: hsl(216, 12%, 54%);
-$-dark-blue: hsl(213, 19%, 18%);
-$-deep-dark-blue: hsl(216, 12%, 8%);
 
-*{
-    font-size: 15px;
-    font-family: Overpass;
+
+:root {
+  --orange:hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --med-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --deep-dark-blue: hsl(216, 12%, 8%);
+  background-color: var(--deep-dark-blue);
 }
+* {
+  font-family: Overpass;
+  .title {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--white);
+  }
+  p {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--light-grey);
+    line-height: 20px;
+  }
+  span{
+    font-weight: 400;
+    color: var(--light-grey);
+  }
+}
+.center_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

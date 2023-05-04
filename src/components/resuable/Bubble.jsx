@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Bubble = ({num}) => {
+const Bubble = ({ className, num, onClick}) => {
   return (
-    <div className='bubble'>
+    <div className={className} onClick={onClick}>
       <span>{num}</span>
     </div>
   )

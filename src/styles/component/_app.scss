@@ -5,4 +5,7 @@
     background: linear-gradient(var(--dark-blue),var(--very-dark-blue));
     border-radius: 30px;
 }
+.app{
+    @extend .center_div;
+}
 

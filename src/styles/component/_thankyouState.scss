@@ -1,0 +1,13 @@
+.card2{
+    padding: 25px;
+    text-align: center;
+    .notify{
+        background-color: var(--dark-blue);
+        padding: 5px 12px;
+        border-radius: 30px;
+        color: var(--orange);
+    }
+    .msg{
+        margin: 30px 0px 20px 0px;
+    }
+}

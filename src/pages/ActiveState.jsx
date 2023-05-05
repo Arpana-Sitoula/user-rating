@@ -2,17 +2,18 @@ import React, { useState } from 'react'
 import Star from '../components/star' 
 import Bubble from '../components/resuable/Bubble'
 import Button from '../components/Button'
-import { Link, useNavigate, useNavigation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const ActiveState = ({nums}) => {
   const [activeState, setActiveState] = useState(true); 
   const [numbers, setNumber] = useState(null);
 
+  // used to nagivate from one page to another -- important
   const navigate = useNavigate()
   
-  const handleActiveStatus = (e, rating) =>{
+  const handleActiveStatus = (rating) =>{
     setNumber(rating);
-    console.log(rating);
+    // console.log(rating);
     setActiveState(false);
   }
 
@@ -28,6 +29,9 @@ const ActiveState = ({nums}) => {
       <div className='keys'>
         {nums.map((number) =>{
           return(
+
+            // append class name by checking state i.e numbers and compairing it with number.id 
+            //use explicit prop names
             <Bubble className={`bubble ${number.id == numbers ? "bubble-active" : ""}`} key={number.id} value={number.val} onClick={handleActiveStatus} data={numbers}/>
           )
         })}

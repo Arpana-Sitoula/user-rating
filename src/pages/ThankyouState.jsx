@@ -5,7 +5,10 @@ import { useLocation } from 'react-router-dom';
 
 
 const ThankyouState = () => {
+
+  // used to access location object -- important
   const location = useLocation();
+  //state.rating has to be in the format we have passed via navigate()
   const rating = location.state.rating;
   return (
     <div className='card2'>
